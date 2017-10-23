@@ -1,0 +1,30 @@
+{
+    "name": "bluevertex/emr-bridge",
+    "description": "Base package for connecting to various EMR systems via Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matt Fox",
+            "email": "matt.fox@thebluevertex.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "illuminate/contracts": "~5.5",
+        "illuminate/support": "~5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "BlueVertex\\EMRBridge\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BlueVertex\\EMRBridge\\EMRBridgeServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
